@@ -1,23 +1,23 @@
 \documentclass[11pt]{article}
 
 \usepackage{subfigure,fancybox,epsfig,enumerate,amssymb,amsmath,amsthm,
-fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add}  
+fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add}
 
 
 
-\newcommand{\A}{\ensuremath{\mathcal A}} 
-\newcommand{\B}{\ensuremath{\mathcal B}} 
+\newcommand{\A}{\ensuremath{\mathcal A}}
+\newcommand{\B}{\ensuremath{\mathcal B}}
 \newcommand{\F}{\ensuremath{\mathcal F}}
-\newcommand{\C}{\ensuremath{\mathbb C}} 
+\newcommand{\C}{\ensuremath{\mathbb C}}
 \newcommand{\K}{\ensuremath{\mathbb K}}
-\newcommand{\R}{\ensuremath{\mathbb R}} 
-\newcommand{\Z}{\ensuremath{\mathbb Z}} 
+\newcommand{\R}{\ensuremath{\mathbb R}}
+\newcommand{\Z}{\ensuremath{\mathbb Z}}
 \newcommand{\defn}[1]{\textbf{#1}}
 \newcommand{\ray}[1]{\overrightarrow{#1}}
 \renewcommand{\line}[1]{\overleftrightarrow{#1}}
 \newcommand{\segment}[1]{\overline{#1}}
 
-\newtheorem{theorem}{Theorem}[section] 
+\newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{claim}[theorem]{Claim}
@@ -28,13 +28,13 @@ fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add}
 \theoremstyle{definition}
 \newtheorem{definition}[]{Definition}
 \newtheorem{observation}[theorem]{Observation}
-\newtheorem{example}[theorem]{Example} 
-\newtheorem{note}[theorem]{Note} 
+\newtheorem{example}[theorem]{Example}
+\newtheorem{note}[theorem]{Note}
 \newtheorem{notation}[theorem]{Notation}
 \newtheorem{ack}{Acknowledgements}
 \newtheorem{axiom}{Axiom}
-\newtheorem{problem}[theorem]{Problem} 
-\newtheorem{question}[theorem]{Question} 
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{question}[theorem]{Question}
 \newtheorem{aaxiom}{Axiom A}
 
 
@@ -56,11 +56,11 @@ The "Preamble", everything that comes before "$\backslash$ begin\{document\} set
 \section{Math!}
 
 
-You let latex know something is math by putting it between dollar sign: $\triangle ABC$. If you use double dollar signs, then it gets centered on a new line. 
+You let latex know something is math by putting it between dollar sign: $\triangle ABC$. If you use double dollar signs, then it gets centered on a new line.
 
 $$\triangle ABC$$
 
-Commands in latex are preceded by a backslash. If it needs parameters, you tell it that by putting things in curly brackets. Most of the commands are pretty intuitive: 
+Commands in latex are preceded by a backslash. If it needs parameters, you tell it that by putting things in curly brackets. Most of the commands are pretty intuitive:
 
 \subsection{Some commands you're likely to use}\label{commands}
 
@@ -78,13 +78,13 @@ $x \in X$, $y \not\in X$
 
 (Commands are case-sensitive. This is useful for things like upper-case and lower-case Greek letters: $\theta, \Theta$.)
 
-I've added a few you're likely to want in the process of doing geometry, like $\ray{AB}, \segment{CD}$. 
+I've added a few you're likely to want in the process of doing geometry, like $\ray{AB}, \segment{CD}$.
 
 \section{Learning new things}
 
-My approach to figuring out how to do something new in LaTeX pretty much consists of searching the internet for the words latex and whatever it is I'm trying to do. there are a bunch of very useful websites for that. Occasionally you're going to want to add in a word like "Typeset", or you're going to get some very off-topic results (a friend of mine recently posted about what happened when she tried to search for how to insert images into latex by searching "latex image"). 
+My approach to figuring out how to do something new in LaTeX pretty much consists of searching the internet for the words latex and whatever it is I'm trying to do. there are a bunch of very useful websites for that. Occasionally you're going to want to add in a word like "Typeset", or you're going to get some very off-topic results (a friend of mine recently posted about what happened when she tried to search for how to insert images into latex by searching "latex image").
 
-You can put in comments---things you don't want to actually see typeset---by using a percent sign. Anything that comes after that on that line won't appear in the document. This is a good way to remove something that was written that you think you might want to take out but don't want to delete entirely. 
+You can put in comments---things you don't want to actually see typeset---by using a percent sign. Anything that comes after that on that line won't appear in the document. This is a good way to remove something that was written that you think you might want to take out but don't want to delete entirely.
 
 You can put in theorems:
 
@@ -97,16 +97,16 @@ And this is where you prove it!
 
 If you give things a "label", you can refer back to them. I gave the theorem the label "theorem", so now I can refer to Theorem~\ref{thattheorem} and, if it's been set up right, and you typeset twice, there should be a hyperlink to it! I can refer back to other things too, like sections: \S~\ref{commands}
 
-You can make tables in LaTeX too, but that gets a little more complicated. I still frequently have to look that up when I want to make it nice. Here's an example. 
+You can make tables in LaTeX too, but that gets a little more complicated. I still frequently have to look that up when I want to make it nice. Here's an example.
 
 \begin{tabular}{|c|l|r|}
-\hline 0 & Firstcol & Secondcol \\ \hline 
+\hline 0 & Firstcol & Secondcol \\ \hline
 first row & Words! & 2343 \\\hline second row & $\R$ & 0 \\\hline \end{tabular}
 
-(By the way, the double backslash tells tex to start a new line, and the ampersands tell it to line things up--in this case, telling it when to go to the next cell in the row. 
+(By the way, the double backslash tells tex to start a new line, and the ampersands tell it to line things up--in this case, telling it when to go to the next cell in the row.
 
 \begin{enumerate}
-\item You can also 
+\item You can also
 \item make lists!
 \begin{enumerate}
 \item they can even
@@ -121,7 +121,7 @@ first row & Words! & 2343 \\\hline second row & $\R$ & 0 \\\hline \end{tabular}
 
 \section{images}
 
-Good news! Geogebra actually has the ability to export the code for creating images in tex files! This is very exciting. I haven't really used it, but we'll see how it goes. 
+Good news! Geogebra actually has the ability to export the code for creating images in tex files! This is very exciting. I haven't really used it, but we'll see how it goes.
 
 %\newrgbcolor{zzttqq}{0.6 0.2 0.}
 %\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
@@ -156,7 +156,7 @@ Good news! Geogebra actually has the ability to export the code for creating ima
 %\end{scriptsize}
 %\end{pspicture*}
 
-It's a little imperfect, but it's waaaaay easier than making an image like this from scratch. 
+It's a little imperfect, but it's waaaaay easier than making an image like this from scratch.
 
 
 \definecolor{zzttqq}{rgb}{0.6,0.2,0.}
@@ -187,7 +187,6 @@ It's a little imperfect, but it's waaaaay easier than making an image like this 
 \draw[color=qqqqff] (1.8,1.84) node {$E'$};
 \end{scriptsize}
 \end{tikzpicture}
-
 
 \definecolor{qqffff}{rgb}{0.,1.,1.}
 \definecolor{qqffqq}{rgb}{0.,1.,0.}
