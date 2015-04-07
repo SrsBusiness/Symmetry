@@ -43,9 +43,23 @@ fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add}
 %This is where the fun begins!
 
 
-\title{Typesetting math!}
+\title{Pythagorean Proof}
 
 \maketitle
+
+\begin{theorem}\label{Pythagorean Formula}
+  For a right triangle with side lengths $a$ and $b$, and hypotenuse length $c$,
+  $c^{2} = a^{2} + b^{2}$
+\end{theorem}
+
+To observe the relationship between the side lengths of a right triangle, consider the following two images.
+Each image contains:
+\begin{enumerate}
+  \item Four congruent right triangles
+  \item A large square containing all of the triangles
+  \item Some amount of empty space, divided into square(s) by the edges of the triangles
+\end{enumerate}
+
 \definecolor{qqffff}{rgb}{0.,1.,1.}
 \definecolor{qqffqq}{rgb}{0.,1.,0.}
 \definecolor{bfffqq}{rgb}{0.7490196078431373,1.,0.}
@@ -107,4 +121,13 @@ fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add}
   \draw (9.54004913720842,-2.3691395207676957)-- (3.8,-2.4);
   \draw (3.769139520767696,3.340049137208422)-- (3.8,-2.4);
 \end{tikzpicture}
+
+\begin{proof}
+Since the four triangles pictured within each square are congruent and have the same area,
+the white space within each of the two large squares must have equal area.
+Since in one image the white space is a square with the hypotenuse, $c$, of the triangles as an edge,
+and in the other iage there are two squares, one bounded by the smaller edge, $a$,
+of the triangle and one bounded by the larger edge, $b$,
+it can be derived from the area of the squares that: $c^{2} = a^{2} + b^{2}$
+\end{proof}
 \end{document}
