@@ -1,0 +1,37 @@
+1.
+
+Prove that up to 3 reflections can reproduce any isometry of the Euclidean plane
+
+It takes a minimum of 3 non-linear points to uniquely identify an isometry.
+We will show that every possible isometry on a set of 3 points can be performed
+with at most 3 reflections.
+
+    0) Identity - 0 reflections
+    1) Translation
+    2) Rotated
+    3) Reflected
+    4) Translated and reflected
+    5) Translated and rotated
+    6) ... 
+
+Other possible approaches:
+
+Contradiction: Assume there exists an isometry that requires more than 3 
+reflections...
+
+Induction: Prove that for all n > 3, n reflections can be reduced to
+k < n reflections.
+
+
+2. 
+
+Prove that exactly 3 reflections is equivalent to a Glide Reflection;
+
+Glide reflection: A transformation composed of a translation vector t and a
+reflection over a line r such that r and t are parallel.
+
+First prove that for a reflections about 3 arbitrary lines, there exists
+another set of 3 lines such that at least 2 are parallel.
+
+Then prove that a reflection about 2 parallel lines and a transverse is a glide
+reflection
