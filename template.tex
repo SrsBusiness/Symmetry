@@ -1,8 +1,8 @@
 \documentclass[11pt]{article}
 
 \usepackage{subfigure,fancybox,epsfig,enumerate,amssymb,amsmath,amsthm,
-fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add}
-
+fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add, graphicx}
+\graphicspath{{images/}}
 
 
 \newcommand{\A}{\ensuremath{\mathcal A}}
@@ -43,7 +43,7 @@ fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add}
 %This is where the fun begins!
 
 
-\title{Josh & Danny}
+\title{Josh \& Danny}
 
 \maketitle
 
@@ -63,7 +63,7 @@ class of isometries as Glide Reflections.
 \begin{theorem}\label{Glide Reflection}
   A Glide Reflection is a form of isometry represented by a composition of a
 reflection and a translation parallel to the line of reflection; it is a
-fundamental isometry which cannot be further reduced any single into component.
+fundamental isometry which cannot be further reduced into any single component.
 \end{theorem}
 
 The irreducibility of a Glide Reflection will be easy to see, but first we will
@@ -89,6 +89,13 @@ reduce the Reflections:
   A Reflection and a Translation perpendicular to each other can be combined by
   moving the Reflection by half of the Translation's magnitude in the opposite
   direction.
+
+
+
+  \includegraphics[scale=.4]{glide}
+
+
+
   PROBABLY NEED A PICTURE TO PROVE THIS.
   Therefore, a reflection line and a translation vector with an arbitrary angle
   between them can be reduced to a Glide Reflection by taking the components of
