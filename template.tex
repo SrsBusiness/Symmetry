@@ -48,21 +48,22 @@ fullpage,pst-plot,pstricks, arcs,tikz,hyperref,pstricks-add}
 \maketitle
 
 \section{Glide Reflections}
-Now we will introduce the concept of a Glide Reflection, and prove that exactly
-3 reflections are equivalent to a Glide Reflection
+Now we will introduce the concept of a Glide Reflection, and prove which
+combinations of isometries are equivalent to a single Glide Reflection.
 
 As we saw in a precious section, three Reflections can create any isometry of
-the plane where the orientation is flipped. In the case where all three lines
+the plane where the orientation is reversed. In the case where all three lines
 are parallel, they can be reduced to a single reflection, but in the case where
-at least two lines are not parallel, they represent an operation that cannot be
-reduced into any of the isometries that we have introduced; therefore we will
-reduce them to a representation where each operation has a unique identity and
-refer to this class of isometries as Glide Reflections.
+there are at least two points of intersection among the lines of Reflection,
+they represent an operation that cannot be reduced into a single one of any of
+the isometries that we have introduced; therefore we will reduce them to a
+representation where each operation has a unique identity and refer to this
+class of isometries as Glide Reflections.
 
 \begin{theorem}\label{Glide Reflection}
   A Glide Reflection is a form of isometry represented by a composition of a
 reflection and a translation parallel to the line of reflection; it is a
-fundamental isometry which cannot be further reduced into components.
+fundamental isometry which cannot be further reduced any single into component.
 \end{theorem}
 
 The irreducibility of a Glide Reflection will be easy to see, but first we will
@@ -71,7 +72,7 @@ will demonstrate the reasons for our choice of representation.
 
 \begin{theorem}\label{3 Reflections form a Glide Reflection}
   A Glide Reflection can be formed from three Reflections, as long as the
-  Reflections are not all parallel.
+  lines of reflection have at least two points of intersection among them.
 \end{theorem}
 
 First we will consider the case where two of the reflection lines are parallel,
@@ -88,14 +89,15 @@ reduce the Reflections:
   moving the Reflection by half of the Translation's magnitude in the opposite
   direction.
   PROBABLY NEED A PICTURE TO PROVE THIS.
-  Therefore, a Reflection and a Translation of arbitrary orientation can be
-  reduced to a Glide Reflection by taking the components of the Translation
-  both parallel and perpendicular to the Reflection line; the perpendicular
-  component can be absorbed by moving the Reflection line, and the remaining
-  two isometries make up our definition of a Glide Reflection.
+  Therefore, a reflection line and a translation vector with an arbitrary angle
+  between them can be reduced to a Glide Reflection by taking the components of
+  the translation vector both parallel and perpendicular to the reflection
+  line; the perpendicular component can be absorbed by moving the reflection
+  line, and the remaining two isometries make up our definition of a Glide
+  Reflection.
 \end{proof}
 
-Now we can prove our 3 Reflection theorem for the following case:
+Now we can prove our Theorem 5.2 for the following case:
 
 \begin{proof}
   For a set of Reflection lines $L_{1}$, $L_{2}$, and $L_{3}$, where the first
@@ -111,19 +113,19 @@ Reflection even if none are parallel, we leverage the fact that two
 intersecting Reflections form a Rotation.
 
 \begin{proof}
-  For a set of Reflection lines $L_{1}$, $L_{2}$, and $L_{3}$, where no lines
-  are parallel they can be reduced to a
-  Glide Reflection by coercing two of the Reflection lines such that one of
-  them is parallel to the third. This can be done because two intersecting
-  Reflection lines compose to form a Rotation around the intersection point:
-  First transform the two Reflections into the Rotation, then choose a new
-  Reflection line through the center of Rotation that is parallel to the third
-  Reflection line. It is guaranteed that a Reflection line exists such that
-  when composed with the Reflection line that you chose it will reproduce the
-  Rotation around that center point. Now that the lines that formed the
-  Rotation have been transformed, you have reached the case where two
-  Reflection lines are parallel and the third intersects both, which we have
-  already shown to be a Glide Reflection.
+  For a set of Reflection lines $L_{1}$, $L_{2}$, and $L_{3}$, where there are
+  at least two intersection points they can be reduced to a Glide Reflection by
+  coercing two of the Reflection lines such that one of them is parallel to the
+  third. This can be done because two intersecting Reflection lines compose to
+  form a Rotation around the intersection point: First transform the two
+  Reflections into the Rotation, then choose a new Reflection line through the
+  center of Rotation that is parallel to the third Reflection line. It is
+  guaranteed that a Reflection line exists such that when composed with the
+  Reflection line that you chose it will reproduce the Rotation around that
+  center point. Now that the lines that formed the Rotation have been
+  transformed, you have reached the case where two Reflection lines are
+  parallel and the third intersects both, which we have already shown to be a
+  Glide Reflection.
 \end{proof}
 
 \end{document}
